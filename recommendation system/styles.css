@@ -1,0 +1,168 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background and base font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9f43;
+}
+
+/* Style the sections */
+.home, .recommendation, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.home {
+    background-color: #000000;
+    color: white;
+}
+
+.recommendation {
+    background-color: #1e224f;
+    color: white;
+}
+
+.contact {
+    background-color: #0058a3;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+#recommendation-form {
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0058a3;
+   
+}
+
+.container {
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Contact form styling */
+#contact-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Contact status message */
+#contact-status {
+    font-weight: bold;
+}

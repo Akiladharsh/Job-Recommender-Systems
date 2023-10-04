@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Job Recommendation System</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Job Recommender</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recommendation">Recommendation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="home" class="section home">
+        <video autoplay loop muted>
+            <source src="home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="recommendation" class="section recommendation">
+        <div class="container">
+            <h1>Job Recommendation</h1>
+            <form id="recommendation-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="skills" placeholder="Skills" required>
+                <input type="text" id="college" placeholder="College" required>
+                <button type="submit">Get Recommendations</button>
+            </form>
+            <div id="recommendation-results"></div>
+        </div>
+    </div>
+
+    <<section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to get in touch with us:</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="contact-status"></div>
+        </div>
+    </section>
+</body>
+</html>
